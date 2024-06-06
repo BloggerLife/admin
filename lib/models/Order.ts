@@ -5,10 +5,7 @@ const orderSchema = new mongoose.Schema({
   email: String,
   products: [
     {
-      product: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Product",
-      },
+      name: String,
       color: String,
       size: String,
       quantity: Number,

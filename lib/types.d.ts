@@ -4,11 +4,11 @@ type CollectionType = {
   description: string;
   image: string;
   products: ProductType[];
-}
+};
 
 type ProductType = {
   _id: string;
-  title: string;
+  titles: string;
   description: string;
   media: [string];
   category: string;
@@ -20,25 +20,26 @@ type ProductType = {
   expense: number;
   createdAt: Date;
   updatedAt: Date;
-}
+};
 
 type OrderColumnType = {
   _id: string;
   customer: string;
+  name: string;
   products: number;
   totalAmount: number;
   createdAt: string;
-}
+};
 
 type OrderItemType = {
-  product: ProductType
   color: string;
+  name: string;
   size: string;
   quantity: number;
-}
+};
 
 type CustomerType = {
   clerkId: string;
   name: string;
   email: string;
-}
+};

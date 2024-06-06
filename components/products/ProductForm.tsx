@@ -73,7 +73,7 @@ const ProductForm: React.FC<ProductFormProps> = ({ initialData }) => {
     defaultValues: initialData
       ? {
           ...initialData,
-          collections: initialData.collections.map(
+          collections: initialData.collections?.map(
             (collection) => collection._id
           ),
         }
